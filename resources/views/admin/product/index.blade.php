@@ -24,8 +24,8 @@
                         <td>{{$product->product_name}}</td>
                         <td>{{$product->details}}</td>
                         <td>{{$product->price}}</td>
-                        <td><img src="images/{{$product->image}}" alt="Italian Trulli"  width="100" height="100"></td>
-                        <td>{{$categories[$product->category_id - 1]->category_name}}</td>
+                        <td><img src="{{$product->image}}" alt="Italian Trulli"  width="100" height="100"></td>
+                        <td>{{$product->category->category_name}}</td>
 
 
                         <td>

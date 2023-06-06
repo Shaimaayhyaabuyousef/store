@@ -14,11 +14,11 @@
         </div>
     </form>
     @else
-    <form action="{{url('update/'.$categories->id)}}" method="post">
+    <form action="{{url('update/'.$category->id)}}" method="post">
         @csrf
         <div class="mb-3">
             <label for="nameFormControlInput" class="form-label">اسم الصنف</label>
-            <input type="text" class="form-control" id="category_name" name="category_name" value="{{$categories->category_name}}">
+            <input type="text" class="form-control" id="category_name" name="category_name" value="{{$category->category_name}}">
         </div>
 
         <div class="mb-3">

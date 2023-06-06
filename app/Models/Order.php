@@ -9,4 +9,7 @@ class Order extends Model
 {
     use HasFactory;
     protected $table = 'orders';
+    public function product(){
+        return $this->belongsTo(Product::class);
+    }
 }

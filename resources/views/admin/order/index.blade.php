@@ -26,7 +26,7 @@
 
             <tr>
 
-                <td>{{ $order->product_id}}</td>
+                <td>  {{$order->product->product_name}}  </td>
                 <td>{{ $order->total_price}}</td>
                 <td>{{ $order->delivery_date}}</td>
                 <td>{{ $order->quantity}}</td>
