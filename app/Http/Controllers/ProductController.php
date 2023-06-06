@@ -57,7 +57,7 @@ class ProductController extends Controller
         $product-> created_at= now();
         $product->updated_at = now();
         $product->save();
-        return redirect('products');
+        return redirect('Product/show');
     }
 
 }

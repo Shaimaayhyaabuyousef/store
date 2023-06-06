@@ -49,7 +49,7 @@ class CategoryController extends Controller
         $category-> updated_at = now();
 
         $category->save();
-        return redirect('category');
+        return redirect('show');
     }
 
 }
